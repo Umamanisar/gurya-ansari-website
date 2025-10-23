@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gurya Ansari - Gurya Ka Hy Ye Jalwa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #c5a25a;
+    }
+
+    header h1 {
+      color: #c5a25a;
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #c5a25a;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1400x700?text=Model+in+Bridal+Dress') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text h2 {
+      font-size: 50px;
+      color: #fff;
+      margin: 0;
+    }
+
+    .hero-text p {
+      color: #c5a25a;
+      font-size: 22px;
+      margin-top: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 60px 80px;
+      background-color: #111;
+    }
+
+    .collection {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #c5a25a;
+    }
+
+    .collection img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .collection:hover img {
+      transform: scale(1.1);
+    }
+
+    .collection h3 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      color: #c5a25a;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .about {
+      background-color: #0a0a0a;
+      padding: 80px;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #c5a25a;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .contact {
+      background-color: #111;
+      padding: 60px 80px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #c5a25a;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 16px;
+      color: #ddd;
+      margin: 5px 0;
+    }
+
+    .social-icons a {
+      color: #c5a25a;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gurya Ansari</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Gurya Ansari</h2>
+      <p>“Gurya Ka Hy Ye Jalwa”</p>
+    </div>
+  </section>
+
+  <section class="collections" id="collections">
+    <div class="collection">
+      <img src="https://via.placeholder.com/600x400?text=Casual+Wear+Model" alt="Casual Wear">
+      <h3>Casual Wear</h3>
+    </div>
+    <div class="collection">
+      <img src="https://via.placeholder.com/600x400?text=Bridal+Wear+Model" alt="Bridal Wear">
+      <h3>Bridal Wear</h3>
+    </div>
+    <div class="collection">
+      <img src="https://via.placeholder.com/600x400?text=Party+Wear+Model" alt="Party Wear">
+      <h3>Party Wear</h3>
+    </div>
+    <div class="collection">
+      <img src="https://via.placeholder.com/600x400?text=Formal+Wear+Model" alt="Formal Wear">
+      <h3>Formal Wear</h3>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Gurya Ansari</h2>
+    <p>
+      Gurya Ansari is a modern fashion brand redefining glamour and elegance in every thread. 
+      From timeless bridal couture to chic party and formal wear, our collections celebrate individuality, confidence, and style. 
+      “Gurya Ka Hy Ye Jalwa” – a statement that embodies the radiance and grace of every woman who wears our designs.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@guryaansari.com</p>
+    <p>Phone: +92 300 1234567</p>
+    <div class="social-icons">
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Gurya Ansari. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
